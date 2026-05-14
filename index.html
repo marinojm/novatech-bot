@@ -2,33 +2,48 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>NovaTech Soluciones Integrales</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaTech - Bienvenida</title>
     <style>
-        body, html { margin: 0; padding: 0; height: 100%; width: 100%; overflow: hidden; }
-        /* Este es el contenedor de tu Google Site */
-        #site-container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-            z-index: 1; /* Capa inferior */
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
         }
+        .container { padding: 20px; }
+        .btn {
+            background-color: #00d2ff;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            text-decoration: none;
+            transition: 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .btn:hover { background-color: #3a7bd5; transform: scale(1.05); }
     </style>
 </head>
 <body>
-
-    <iframe id="site-container" src="https://sites.google.com/miumg.edu.gt/novatech-soluciones-integrales/inicio?authuser=0"></iframe>
+    <div class="container">
+        <h1>Bienvenido a NovaTech</h1>
+        <p>Soluciones Integrales para tus proyectos</p>
+        <br>
+        <a href="TU_URL_DE_GOOGLE_SITES" class="btn">Explorar Sitio Web</a>
+    </div>
 
     <script type="text/javascript">
         (function(d, m){
-            var kommunicateSettings = {
-                "appId":"10391a400cada3e7b40148daf305830ac",
-                "popupWidget":true,
-                "automaticChatOpenOnNavigation":false
-            };
+            var kommunicateSettings = {"appId":"10391a400cada3e7b40148daf305830ac","popupWidget":true};
             var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
             s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
             var h = d.getElementsByTagName("head")[0]; h.appendChild(s);
