@@ -2,18 +2,46 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>NovaTech Chat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaTech Soluciones Integrales</title>
+    <style>
+        /* Estética de carga profesional */
+        body { 
+            margin: 0; padding: 0; background-color: #f4f7f6; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex; align-items: center; justify-content: center; height: 100vh;
+        }
+        .loader-container { text-align: center; color: #1e3c72; }
+        .btn-enter {
+            margin-top: 20px; padding: 15px 30px;
+            background-color: #1e3c72; color: white;
+            border: none; border-radius: 5px; cursor: pointer;
+            text-decoration: none; font-weight: bold;
+        }
+    </style>
 </head>
 <body>
+
+    <div class="loader-container">
+        <h1>Bienvenido a NovaTech</h1>
+        <p>Cargando asistente virtual y plataforma...</p>
+        <br>
+        <a href="https://sites.google.com/view/novatech-soluciones-integrales/inicio" class="btn-enter">ENTRAR AL SITIO OFICIAL</a>
+    </div>
+
     <script type="text/javascript">
         (function(d, m){
-            var kommunicateSettings = 
-                {"appId":"7GzWxx3qzmSZNNcocrro7A8ZN0opSBeF","popupWidget":true,"automaticChatOpenOnNavigation":true};
+            var kommunicateSettings = {
+                "appId":"10391a400cada3e7b40148daf305830ac",
+                "popupWidget":true,
+                "automaticChatOpenOnNavigation":true
+            };
             var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
             s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
             var h = d.getElementsByTagName("head")[0]; h.appendChild(s);
             window.kommunicate = m; m._globals = kommunicateSettings;
         })(document, window.kommunicate || {});
     </script>
+
 </body>
 </html>
